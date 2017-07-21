@@ -13,15 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnOutMove: UIButton!
     @IBOutlet weak var tblView: UITableView!
     
-   
-
     var ver : Float = 2.1
-    
-    
-    
     var tableData = ["01" , "02" , "03" , "04" , "05" ,"06" ,"07" , "08" ,"09" ,"10" ,"11"]
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +25,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
 }
 
 extension ViewController: UITableViewDelegate {
@@ -51,9 +42,26 @@ extension ViewController: UITableViewDelegate {
             tableView.reloadData()
         }
     }
+    
     func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        
+        let todo = tableData.remove(at: fromIndexPath.row)
+        tableData.insert(todo, at: to.row)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell:TableViewCell = tableView.cellForRow(at: indexPath) as! TableViewCell
+        let infor = "Date : \(cell.lblTime.text!)\nVersion : \(cell.lblVersion.text!)\nIndex : \(cell.lblCount.text!)"
+        let detaiVideo = storyboard?.instantiateViewController(withIdentifier: "DetailVideo") as! DetailVideo
+        detaiVideo.info = infor
+        if indexPath.row % 2 == 0 {
+            present(detaiVideo, animated: true, completion: nil)
+            //detaiVideo.lockPresent = true
+        }else {
+            //detaiVideo.lockPresent = false
+            navigationController?.pushViewController(detaiVideo, animated: true)
+        }
+    }
+ 
 }
 
 extension ViewController: UITableViewDataSource {
@@ -74,6 +82,7 @@ extension ViewController: UITableViewDataSource {
         
         return cell
     }
+    
     
 }
 

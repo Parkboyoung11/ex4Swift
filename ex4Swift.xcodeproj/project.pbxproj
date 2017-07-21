@@ -16,6 +16,8 @@
 		333AA0521F1F053C00DEC8DA /* ex4SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AA0511F1F053C00DEC8DA /* ex4SwiftUITests.swift */; };
 		333AA0601F1F0FD300DEC8DA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AA05F1F1F0FD300DEC8DA /* TableViewCell.swift */; };
 		333AA0621F1F1C0400DEC8DA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AA0611F1F1C0400DEC8DA /* TableViewController.swift */; };
+		33EB4CBC1F2061F800451F8C /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB4CBB1F2061F800451F8C /* MainNavigationController.swift */; };
+		33EB4CBE1F20653200451F8C /* DetailVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB4CBD1F20653200451F8C /* DetailVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		333AA0531F1F053C00DEC8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		333AA05F1F1F0FD300DEC8DA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		333AA0611F1F1C0400DEC8DA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		33EB4CBB1F2061F800451F8C /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		33EB4CBD1F20653200451F8C /* DetailVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				333AA03D1F1F053C00DEC8DA /* Info.plist */,
 				333AA05F1F1F0FD300DEC8DA /* TableViewCell.swift */,
 				333AA0611F1F1C0400DEC8DA /* TableViewController.swift */,
+				33EB4CBB1F2061F800451F8C /* MainNavigationController.swift */,
+				33EB4CBD1F20653200451F8C /* DetailVideo.swift */,
 			);
 			path = ex4Swift;
 			sourceTree = "<group>";
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EB4CBC1F2061F800451F8C /* MainNavigationController.swift in Sources */,
 				333AA0601F1F0FD300DEC8DA /* TableViewCell.swift in Sources */,
 				333AA0341F1F053C00DEC8DA /* ViewController.swift in Sources */,
 				333AA0321F1F053C00DEC8DA /* AppDelegate.swift in Sources */,
+				33EB4CBE1F20653200451F8C /* DetailVideo.swift in Sources */,
 				333AA0621F1F1C0400DEC8DA /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +519,7 @@
 				333AA0581F1F053C00DEC8DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		333AA0591F1F053C00DEC8DA /* Build configuration list for PBXNativeTarget "ex4SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +528,7 @@
 				333AA05B1F1F053C00DEC8DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		333AA05C1F1F053C00DEC8DA /* Build configuration list for PBXNativeTarget "ex4SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +537,7 @@
 				333AA05E1F1F053C00DEC8DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
